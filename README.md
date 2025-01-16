@@ -1,66 +1,108 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Sports League System in Laravel
+The Sports League System is a web-based application designed to efficiently manage teams, players, matches, scores, and standings. The project is built using the Laravel framework, with HTML and CSS for the frontend design.
 
-## About Laravel
+## Features
+### An Admin Can
+- **Team Management**: Add, update, and view team details
+- **Player Management**: Manage player profiles, assign players to teams.
+- **Match Scheduling**: Create and manage match schedules.
+- **Score Tracking**: Record and update match scores.
+- **Standings**: Automatically calculate and display league standings.
+- **Ranking**: Automatically calculate and display Player ranking.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Technologies Used
+- **Frontend**: HTML,CSS (Bootstrap), JavaScript
+- **Backend:** Laravel Framework
+- **Database**: MySQL
+## Installation Guide
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Step 1: Clone the Repository
+```bash
+https://github.com/alamgir-ahosain/sports-league-system.git
+ ```
+or Download Zip file
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Step 2: Install Dependencies
+```
+composer install
+npm install
+npm run dev
+ ```
 
-## Learning Laravel
+### Step 3: Environment Setup
+- Copy the ``` .env.example ``` file and rename it to ``` .env ```
+- Generate the application key: ```php artisan key:generate --ansi ```
+ 
+### Step 4: Database Configuration 
+ - Update your ```.env``` file with your database credentials:
+ ``` DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=project_name
+DB_USERNAME=your_db_username
+DB_PASSWORD=your_db_password
+```
+### Step 5: Run the Application
+```
+php artisan migrate
+php artisan serve
+ ```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Usage
+1. Register a new account.
+2. Log in with your credentials.
+3. Browse with the role
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Screenshots
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Home Page
+  ![Screenshot 2025-01-17 001946](https://github.com/user-attachments/assets/b6480db7-482b-4bff-85ec-b74df0287b84)
+- Team Page
+  ![Screenshot 2025-01-17 001959](https://github.com/user-attachments/assets/74c0c48e-80f3-4f09-93ee-ed289d9af354)
+- Team Details
+![Screenshot 2025-01-17 002031](https://github.com/user-attachments/assets/b1aac3c8-ab62-4ec2-842f-50fbc72ff551)
+- Player Page
+![Screenshot 2025-01-17 002044](https://github.com/user-attachments/assets/cd583daa-d4b5-4221-9335-4d407193f7f0)
+- Match Page
+  ![Screenshot 2025-01-17 002827](https://github.com/user-attachments/assets/958dd56b-5828-43c5-b95e-1ad1aa820dda)
 
-## Laravel Sponsors
+- Match Details
+![Screenshot 2025-01-17 002838](https://github.com/user-attachments/assets/3c14d34a-fb13-4083-a8cc-1bc256675162)
+- Team Standing
+  ![Screenshot 2025-01-17 002102](https://github.com/user-attachments/assets/a3d00534-ab10-4b13-8a92-c760a2788a1c)
+- Player Ranking
+  ![Screenshot 2025-01-17 002112](https://github.com/user-attachments/assets/bc8c25ca-6780-4bbd-9374-ffc927fb7a6e)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Gallaries
+  ![Screenshot 2025-01-17 002237](https://github.com/user-attachments/assets/41e4a7f2-335c-4753-bff9-e8a4d17c8401)
+- Specefic Match Gallaries Details
+![Screenshot 2025-01-17 002245](https://github.com/user-attachments/assets/fb2383f3-0eca-488e-bde1-8ef3266ea628)
+- Admin Home Page
+  ![Screenshot 2025-01-17 002341](https://github.com/user-attachments/assets/871e3cb7-d499-4dfc-acbe-e5e5668c9438)
 
-### Premium Partners
+- Admin Player Page
+  ![Screenshot 2025-01-17 002351](https://github.com/user-attachments/assets/1bdfd493-da89-462d-988e-e626341043fa)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+ - Admin Team Page
+   ![Screenshot 2025-01-17 002400](https://github.com/user-attachments/assets/acf64ebe-51c1-4cad-b328-7172043fec87)
+- Admin Gallaries Page
+  ![Screenshot 2025-01-17 002409](https://github.com/user-attachments/assets/f078b602-eb98-46c7-8aa5-a43751199395)
+- Admin Match Page
+  ![Screenshot 2025-01-17 002417](https://github.com/user-attachments/assets/c6c25664-b440-482e-a11e-2ee4d87d2b22)
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Thank You for Checking Out This Project!
+Your feedback is valuable! Please share your thoughts and suggestions for improvement via [GitHub Issues](https://github.com/alamgir-ahosain/sports-league-system/issues).
 
-## Code of Conduct
+## Acknowledgements
+- Thanks to [Laravel Documentation](https://laravel.com/docs) for providing comprehensive guidelines.
+- Special thanks to all open-source contributors for their hard work and support.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
